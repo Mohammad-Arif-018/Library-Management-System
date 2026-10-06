@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #18212b;
+    background: #ffffff;
+}
+
+.navbar {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    background: #111820;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    min-width: 135px;
+    color: white;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navlinks a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.navlinks a:hover {
+    color: #edab42;
+}
+
+.navbuttons {
+    margin-left: auto;
+    display: flex;
+    gap: 9px;
+}
+
+.login,
+.signup {
+    padding: 7px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.login {
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.signup {
+    color: #161616;
+    background: #edab42;
+    border: 1px solid #edab42;
+}
+
+.about-section {
+    background: #ffffff;
+    color: #18212b;
+    padding: 35px 5%;
+    min-height: calc(100vh - 55px);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.section-label {
+    color: #edab42;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.about-content > p {
+    color: #6b7280;
+    font-size: 10px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.about-point {
+    display: flex;
+    gap: 10px;
+    padding: 11px;
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.about-point:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.about-point strong {
+    color: #edab42;
+    font-size: 10px;
+}
+
+.about-point h3 {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.about-point p {
+    color: #6b7280;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.about-image {
+    height: 285px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
